@@ -1,6 +1,7 @@
 //
 //  RatingControl.swift
 //  Terranaut
+//  or is it Boardster?
 //
 //  Created by Jane Appleseed on 5/26/15.
 //  Copyright © 2015 Apple Inc. All rights reserved.

@@ -3,7 +3,7 @@
 //  Terranaut
 //
 //  Created by Casey McCourt on December 22nd-ish, 2015.
-//  Copyright © 2015 Apple Inc. All rights reserved.
+//  Copyright © 2015 Boardster Inc. All rights reserved.
 //  See LICENSE.txt for this sample’s licensing information.
 //
 

@@ -2,7 +2,7 @@
 //  TerranautTests.swift
 //  TerranautTests
 //
-//  Created by Jane Appleseed on 5/23/15.
+//  Created by Casey McCourt on December 22nd-ish, 2015.
 //  Copyright © 2015 Apple Inc. All rights reserved.
 //
 

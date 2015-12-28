@@ -2,7 +2,7 @@
 //  GearTableViewController.swift
 //  Terranaut
 //
-//  Created by Jane Appleseed on 5/27/15.
+//  Created by Casey McCourt on December 22nd-ish, 2015.
 //  Copyright © 2015 Apple Inc. All rights reserved.
 //  See LICENSE.txt for this sample’s licensing information.
 //

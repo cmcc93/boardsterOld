@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="NgP-ck-nBQ">
             <objects>
                 <viewController id="AGs-pQ-24h" sceneMemberID="viewController">
@@ -17,8 +17,18 @@
                     <view key="view" contentMode="scaleToFill" id="3hu-Yr-btX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="snowboards-adjusted" translatesAutoresizingMaskIntoConstraints="NO" id="XgF-R6-2wr">
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XgF-R6-2wr" firstAttribute="leading" secondItem="3hu-Yr-btX" secondAttribute="leading" id="Nc5-s5-k8R"/>
+                            <constraint firstItem="XgF-R6-2wr" firstAttribute="top" secondItem="3qq-Ea-WQ9" secondAttribute="bottom" id="xHu-JC-zsf"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="yGO-kG-Ax0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQp-Cn-TLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,6 +177,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AGs-pQ-24h" kind="relationship" relationship="rootViewController" id="Bug-1G-f4h"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWb-Rl-Wkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,6 +206,7 @@
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
+        <image name="snowboards-adjusted" width="265" height="310"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="GtT-Vd-w7x"/>

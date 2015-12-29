@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6bE-09-FD8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="64j-Fd-425">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--Split View Controller-->
+        <scene sceneID="u5n-O0-ZhY">
+            <objects>
+                <splitViewController id="64j-Fd-425" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="6bE-09-FD8" kind="relationship" relationship="masterViewController" id="P99-Ek-K0r"/>
+                        <segue destination="e59-hb-8P8" kind="relationship" relationship="detailViewController" id="3hY-ci-abe"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M51-FA-qAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-950" y="-304"/>
+        </scene>
+        <!--Boardster-->
         <scene sceneID="NgP-ck-nBQ">
             <objects>
                 <viewController id="AGs-pQ-24h" sceneMemberID="viewController">
@@ -18,17 +31,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="snowboards-adjusted" translatesAutoresizingMaskIntoConstraints="NO" id="XgF-R6-2wr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboards-adjusted" translatesAutoresizingMaskIntoConstraints="NO" id="XgF-R6-2wr">
                                 <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XgF-R6-2wr" firstAttribute="leading" secondItem="3hu-Yr-btX" secondAttribute="leading" id="Nc5-s5-k8R"/>
-                            <constraint firstItem="XgF-R6-2wr" firstAttribute="top" secondItem="3qq-Ea-WQ9" secondAttribute="bottom" id="xHu-JC-zsf"/>
+                            <constraint firstItem="XgF-R6-2wr" firstAttribute="leading" secondItem="3hu-Yr-btX" secondAttribute="leading" id="6zt-Ug-HvW"/>
+                            <constraint firstItem="XgF-R6-2wr" firstAttribute="top" secondItem="3qq-Ea-WQ9" secondAttribute="bottom" id="90S-ZC-zd1"/>
+                            <constraint firstItem="ONo-4s-NlW" firstAttribute="top" secondItem="XgF-R6-2wr" secondAttribute="bottom" constant="44" id="CUg-Zx-jRU"/>
+                            <constraint firstAttribute="trailing" secondItem="XgF-R6-2wr" secondAttribute="trailing" id="Lvi-VJ-hBE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="yGO-kG-Ax0"/>
+                    <navigationItem key="navigationItem" title="Boardster" id="yGO-kG-Ax0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQp-Cn-TLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,7 +198,20 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWb-Rl-Wkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="387"/>
+            <point key="canvasLocation" x="-84" y="-443"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TAK-d8-IQa">
+            <objects>
+                <navigationController id="e59-hb-8P8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QY6-p0-gj6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOV-52-yT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-712" y="596"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8ii-y2-Inh">

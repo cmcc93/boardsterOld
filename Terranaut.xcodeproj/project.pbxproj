@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		008706BE1C28D97300BF3496 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008706BD1C28D97300BF3496 /* Default-568h@2x.png */; };
+		00E9D9E41C32229C00188514 /* SnowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D9E31C32229C00188514 /* SnowViewController.swift */; };
 		CA1292781B150DF500303C8D /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1292771B150DF500303C8D /* RatingControl.swift */; };
 		CA1902E01B10E523000271C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1902DF1B10E523000271C4 /* AppDelegate.swift */; };
 		CA1902E21B10E523000271C4 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1902E11B10E523000271C4 /* GearViewController.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		008706BD1C28D97300BF3496 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		00E9D9E31C32229C00188514 /* SnowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowViewController.swift; sourceTree = "<group>"; };
 		CA1292771B150DF500303C8D /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		CA1902DC1B10E523000271C4 /* Terranaut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terranaut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1902DF1B10E523000271C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				CA96F92A1B1144F7000CC7F8 /* Assets.xcassets */,
 				CA1902E81B10E523000271C4 /* LaunchScreen.storyboard */,
 				CA1902EB1B10E523000271C4 /* Info.plist */,
+				00E9D9E31C32229C00188514 /* SnowViewController.swift */,
 			);
 			path = Terranaut;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				CA734E351B155077001A6F80 /* Gear.swift in Sources */,
 				CA1902E21B10E523000271C4 /* GearViewController.swift in Sources */,
 				CA1292781B150DF500303C8D /* RatingControl.swift in Sources */,
+				00E9D9E41C32229C00188514 /* SnowViewController.swift in Sources */,
 				CA1902E01B10E523000271C4 /* AppDelegate.swift in Sources */,
 				CA5D06031B162F2300095F0F /* GearTableViewController.swift in Sources */,
 				CA5D06011B162F2300095F0F /* GearTableViewCell.swift in Sources */,

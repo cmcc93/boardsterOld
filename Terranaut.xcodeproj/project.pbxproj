@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		008706BE1C28D97300BF3496 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008706BD1C28D97300BF3496 /* Default-568h@2x.png */; };
+		009FFA051C4AD457004D2282 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009FFA041C4AD457004D2282 /* MenuViewController.swift */; };
 		00E9D9E41C32229C00188514 /* SnowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D9E31C32229C00188514 /* SnowViewController.swift */; };
 		CA1292781B150DF500303C8D /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1292771B150DF500303C8D /* RatingControl.swift */; };
 		CA1902E01B10E523000271C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1902DF1B10E523000271C4 /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		008706BD1C28D97300BF3496 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		009FFA041C4AD457004D2282 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		00E9D9E31C32229C00188514 /* SnowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowViewController.swift; sourceTree = "<group>"; };
 		CA1292771B150DF500303C8D /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		CA1902DC1B10E523000271C4 /* Terranaut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terranaut.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 				CA1292771B150DF500303C8D /* RatingControl.swift */,
 				CA734E341B155077001A6F80 /* Gear.swift */,
 				CA1902E31B10E523000271C4 /* Main.storyboard */,
+				009FFA041C4AD457004D2282 /* MenuViewController.swift */,
 				CA5D06021B162F2300095F0F /* GearTableViewController.swift */,
 				CA5D06001B162F2300095F0F /* GearTableViewCell.swift */,
 				CA96F92A1B1144F7000CC7F8 /* Assets.xcassets */,
@@ -224,6 +227,7 @@
 				CA1902E01B10E523000271C4 /* AppDelegate.swift in Sources */,
 				CA5D06031B162F2300095F0F /* GearTableViewController.swift in Sources */,
 				CA5D06011B162F2300095F0F /* GearTableViewCell.swift in Sources */,
+				009FFA051C4AD457004D2282 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

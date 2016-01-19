@@ -12,6 +12,10 @@ class SnowViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
     // MARK: Properties
 
+//    @IBAction func snowToMenuSegue(sender: UIButton) {
+//        performSegueWithIdentifier("snowToMenu", sender: nil)
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

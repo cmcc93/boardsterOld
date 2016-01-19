@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="64j-Fd-425">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Split View Controller-->
@@ -9,7 +10,6 @@
             <objects>
                 <splitViewController id="64j-Fd-425" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="6bE-09-FD8" kind="relationship" relationship="masterViewController" id="P99-Ek-K0r"/>
                         <segue destination="v9f-0v-G6c" kind="relationship" relationship="detailViewController" id="n3f-Uv-zc4"/>
                     </connections>
                 </splitViewController>
@@ -41,7 +41,18 @@
                             <constraint firstAttribute="trailing" secondItem="XgF-R6-2wr" secondAttribute="trailing" id="Lvi-VJ-hBE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Boardster" id="yGO-kG-Ax0"/>
+                    <navigationItem key="navigationItem" title="Boardster" id="yGO-kG-Ax0">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="LPc-L9-erd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8E1-rX-Shz">
+                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="snowToMenuSegue:" destination="AGs-pQ-24h" eventType="touchUpInside" id="O6S-sB-ZJa"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQp-Cn-TLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,7 +69,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="AGs-pQ-24h" kind="relationship" relationship="rootViewController" id="Bug-1G-f4h"/>
+                        <segue destination="AGs-pQ-24h" kind="relationship" relationship="rootViewController" id="HkP-5D-7JR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWb-Rl-Wkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -68,6 +79,7 @@
         <!--Menu View Controller-->
         <scene sceneID="dsW-FT-HbQ">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ush-Zi-x23" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="RoF-C9-LEG" customClass="MenuViewController" customModule="Terranaut" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QKV-MP-Lh0"/>
@@ -78,19 +90,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiV-ux-u5Q">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <rect key="frame" x="109" y="83" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swT-k9-IJv">
+                                <rect key="frame" x="448" y="83" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dDz-km-P37">
+                                <rect key="frame" x="0.0" y="126" width="600" height="91"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xiV-ux-u5Q" firstAttribute="centerX" secondItem="z1T-i9-rPh" secondAttribute="centerX" id="Jw2-hE-wj3"/>
-                            <constraint firstItem="xiV-ux-u5Q" firstAttribute="centerY" secondItem="z1T-i9-rPh" secondAttribute="centerY" id="jp4-gJ-ydn"/>
+                            <constraint firstItem="xiV-ux-u5Q" firstAttribute="leading" secondItem="z1T-i9-rPh" secondAttribute="leadingMargin" constant="89" id="9RC-Kl-7Xr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="swT-k9-IJv" secondAttribute="trailing" constant="86" id="GcP-TI-QJh"/>
+                            <constraint firstItem="UYZ-3K-O3P" firstAttribute="top" secondItem="dDz-km-P37" secondAttribute="bottom" constant="383" id="Hqg-gi-CxN"/>
+                            <constraint firstItem="dDz-km-P37" firstAttribute="leading" secondItem="z1T-i9-rPh" secondAttribute="leading" id="QLi-iV-rmW"/>
+                            <constraint firstItem="xiV-ux-u5Q" firstAttribute="top" secondItem="QKV-MP-Lh0" secondAttribute="bottom" constant="19" id="ekO-YS-5MW"/>
+                            <constraint firstItem="xiV-ux-u5Q" firstAttribute="baseline" secondItem="swT-k9-IJv" secondAttribute="baseline" id="f8l-uy-E71"/>
+                            <constraint firstItem="dDz-km-P37" firstAttribute="top" secondItem="xiV-ux-u5Q" secondAttribute="bottom" constant="13" id="tu2-jr-1qs"/>
+                            <constraint firstAttribute="trailing" secondItem="dDz-km-P37" secondAttribute="trailing" id="z6a-RV-V86"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cty-Ul-WLe"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ush-Zi-x23" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="468" y="592"/>
         </scene>
@@ -104,9 +129,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="RoF-C9-LEG" kind="relationship" relationship="rootViewController" id="vao-NR-72e"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5SV-z7-mMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,7 +18,7 @@ class GearTableViewController: UITableViewController {
         super.viewDidLoad()
         
         // Use the edit button item provided by the table view controller.
-        navigationItem.leftBarButtonItem = editButtonItem()
+//        navigationItem.leftBarButtonItem = editButtonItem()
         
         // Load any saved gears, otherwise load sample data.
         if let savedGears = loadGears() {
